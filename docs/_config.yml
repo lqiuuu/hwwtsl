@@ -11,6 +11,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jektex
+  - jekyll-remote-theme
 
 primer:
   appearance: "auto" # can be "light", "dark" or "auto"
