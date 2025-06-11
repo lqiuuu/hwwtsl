@@ -4,6 +4,6 @@ description: A conlang and writing system project.
 url: "https://lqiuuu.github.io/hwwtsl"
 baseurl: "" # 如果你的项目是 username.github.io，就留空；否则写 "/你的仓库名"
 
-theme: "no-style-please"
+remote-theme: "no-style-please"
 
 permalink: /:title/
