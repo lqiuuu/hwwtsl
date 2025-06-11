@@ -1,12 +1,19 @@
 title: Hope We Write the Same Language
 author: hwwtsl
 description: A conlang and writing system project.
-# url: "https://lqiuuu.github.io/hwwtsl"
-url: ""
+url: "https://lqiuuu.github.io"
+# url: ""
 baseurl: "/hwwtsl" # 如果你的项目是 username.github.io，就留空；否则写 "/你的仓库名"
 
 remote-theme: riggraz/no-style-please
 plugins:
   - jekyll-remote-theme
 
-# permalink: /:title/
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "←." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+  lowercase_titles: true # show titles in lowercase in lists
+
+permalink: /:title/
