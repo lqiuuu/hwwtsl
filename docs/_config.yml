@@ -1,7 +1,8 @@
 title: Hope We Write the Same Language
 author: hwwtsl
 description: A conlang and writing system project.
-url: "https://lqiuuu.github.io/hwwtsl"
+# url: "https://lqiuuu.github.io/hwwtsl"
+url: ""
 baseurl: "" # 如果你的项目是 username.github.io，就留空；否则写 "/你的仓库名"
 
 remote-theme: "no-style-please"
