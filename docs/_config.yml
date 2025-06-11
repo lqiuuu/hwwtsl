@@ -8,6 +8,9 @@ baseurl: "/hwwtsl" # 如果你的项目是 username.github.io，就留空；否�
 remote-theme: riggraz/no-style-please
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
 
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
@@ -17,3 +20,11 @@ theme_config:
   lowercase_titles: true # show titles in lowercase in lists
 
 permalink: /:title/
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
