@@ -1,7 +1,7 @@
 ---
 title: Hope We Write the Same Language
-layout: default
-# layout: home
+# layout: default
+layout: home
 ---
 
 # Hope We Write the Same Language
