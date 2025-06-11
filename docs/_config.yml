@@ -3,10 +3,10 @@ author: hwwtsl
 description: A conlang and writing system project.
 # url: "https://lqiuuu.github.io/hwwtsl"
 url: ""
-baseurl: "" # 如果你的项目是 username.github.io，就留空；否则写 "/你的仓库名"
+baseurl: "/hwwtsl" # 如果你的项目是 username.github.io，就留空；否则写 "/你的仓库名"
 
 remote-theme: riggraz/no-style-please
 plugins:
   - jekyll-remote-theme
 
-permalink: /:title/
+# permalink: /:title/
