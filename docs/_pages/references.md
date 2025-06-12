@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "References"
-permalink: /references
+permalink: /references/
+
 ---
 
 ## Books
-The Language Game
+The Language Game  
 The Language Puzzle

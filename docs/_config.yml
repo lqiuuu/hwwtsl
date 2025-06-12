@@ -13,7 +13,7 @@ plugins:
   - jektex
   - jekyll-remote-theme
 
-primer:
+theme_config: 
   appearance: "auto" # can be "light", "dark" or "auto"
   back_home_text: "←." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
@@ -21,6 +21,11 @@ primer:
   lowercase_titles: true # show titles in lowercase in lists
 
 permalink: /:title/
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 jektex:
   cache_dir: ".jektex-cache"
