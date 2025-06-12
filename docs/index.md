@@ -8,4 +8,5 @@ This is an ongoing Conlang making project, including an epistolary style storyli
 
 - [References]({{ "/references/" | relative_url }})
 - [First Letter](_posts/2025-05-06-welcome-to-jekyll.markdown)
+- [Letter Collection]({{ "/correspondence/" | relative_url }})
 
