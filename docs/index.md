@@ -19,7 +19,7 @@ p:last-of-type {
 This is an ongoing Conlang making project, including an epistolary style storyline and a glyph writing system.
 
 
-- [Dictionary]({{ "/dictionary/" | relative_url }})
+- [H.W.S.X. Dictionary]({{ "/dictionary/" | relative_url }})
     - the writing system's grammar and lexcion
 
 - [Letter Collection]({{ "/correspondence/" | relative_url }})

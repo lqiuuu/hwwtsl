@@ -2,14 +2,61 @@
 layout: default
 ---
 
+{%- comment -%}
 {%-include back_link.html-%}
+{%- endcomment -%}
+
+{% assign posts_lang = site.posts | where: "lang", page.lang | sort: "order" %}
+{% assign current_order = page.order %}
+
+{% assign prev_order = current_order | minus: 1 %}
+{% assign next_order = current_order | plus: 1 %}
+
+{% assign prev_post = nil %}
+{% assign next_post = nil %}
+
+{% for post in posts_lang %}
+  {% if post.order == prev_order %}
+    {% assign prev_post = post %}
+  {% endif %}
+  {% if post.order == next_order %}
+    {% assign next_post = post %}
+  {% endif %}
+{% endfor %}
+
+<a href="{{ site.baseurl }}/correspondence/">← letters archive</a>
 
 <article>
+  
   <p class="post-meta">
     <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    <br>
+    {% if page.lang == 'en' %}
+    <a href="{{ page.url | replace: '/en/', '/zh/' | prepend: site.baseurl }}">中文</a>
+    {% else %}
+    <a href="{{ page.url | replace: '/zh/', '/en/' | prepend: site.baseurl }}">English</a>
+    {% endif %}
   </p>
   
   <!-- <h1>{{ page.title }}</h1> -->
+    
 
   {{ content }}
 </article>
+
+
+
+<nav class="post-navigation">
+  <ul>
+
+    {% if prev_post %}
+    <a href="{{ prev_post.url | relative_url }}">← prev </a>
+    {% endif %}
+
+    {% if next_post %}
+    <a href="{{ next_post.url | relative_url }}">next →</a>
+    {% endif %}
+  </ul>
+</nav>
+
+
