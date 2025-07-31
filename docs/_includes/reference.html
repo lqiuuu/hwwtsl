@@ -1,0 +1,31 @@
+<div class="card-container">
+{% for item in site.data.bibliography %}
+  <div class="card">
+    {% if item.link %}
+    <a href="{{ item.link }}" class="card-link" target="_blank">
+    {% endif %}
+        {% if item.image %}
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" style="width:100%; height:auto;">
+        {% endif %}
+    {% if item.link %}
+    </a>
+    {% endif %}
+    <div class="info">
+    <h3 class="title">{{ item.title }}</h3><nobr></nobr>
+    {% if item.subtitle %}
+      <p class="subtitle">{{ item.subtitle }}</p>
+    {% endif %}
+    <p class="author">
+        {% for name in item.author %}
+        {{ name }}{% if forloop.last == false %}<br>{% endif %}
+        {% endfor %}</p>
+    <p>{{ item.description }}</p>
+    <!-- {% if item.link %}
+      <a href="{{ item.link }}" target="_blank">More info</a>
+    {% endif %} -->
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+

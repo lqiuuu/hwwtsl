@@ -1,0 +1,116 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  width: calc(100% + 16em); /* wider than body size*/
+  position: relative;
+  max-width: none;
+  margin-left: -8rem; /* center container*/
+  margin-right: -8rem;
+  /* padding-left: -8rem;
+  padding-right: -8rem; */
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  padding: 1em;
+  /* background-color: #f0f0f0; */
+  border-radius: 8px;
+}
+
+.card-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  /* flex: 0 0 auto; */
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  /* flex-flow: column wrap; */
+  min-width: 25em;
+  /* max-height: 300px; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s;
+
+  gap: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+  max-width: 100px;
+  height: auto;
+  flex-grow: 1;
+  display: block;
+  /* margin-bottom: 0.5rem; */
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.card .info{
+  flex: 6; /* 内容区占剩余空间 */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 6;
+  gap: 0.3rem;
+}
+
+.card .title {
+  margin-top: 0;
+  margin-bottom: 0.1em;
+}
+
+.card .subtitle {
+  margin-top: 0;         /* 去掉副标题顶部间距 */
+  margin-bottom: .1em;    /* 副标题底部间距，可根据需要调整 */
+}
+
+.card .author {
+  margin: 0;
+  font-size: .8em;
+  font-weight: 700；
+}
+
+
+.card .description {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  background: #f0f0f0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.card:hover .description {
+  display: block;
+}
+
+
+/* 移动端改为纵向滚动 */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+- type: book
+  title: "The Language Game"
+  subtitle: "How Improvisation Created Language and Changed the World"
+  author: 
+    - "Morten H. Christiansen"  
+    - "Nick Chater"
+  description: "Sees language creation as game of charades. Use imagination to communicate."
+  image: "/assets/img/thelanguagegame.jpg"
+  link: "https://example.com/langgame"
+
+- type: book
+  title: "The Language Puzzle"
+  subtitle: "Piecing Together the Six-Million-Year Story of How Words Evolved"
+  author: 
+    - Steven Mithen
+  description: "Sees language creation as game of charades. Use imagination to communicate."
+  image: "/assets/img/thelanguagepuzzle.jpg"
+
+- type: book
+  title: "Transcendence"
+  subtitle: "How Humans Evolved through Fire, Language, Beauty, and Time"
+  author: 
+    - Gaia Vince
+  description: "Sees language creation as game of charades. Use imagination to communicate."
+  image: "assets/img/transcendence.jpg"
+ 
+- type: book
+  title: "Transcendence"
+  subtitle: "How Humans Evolved through Fire, Language, Beauty, and Time"
+  author: 
+    - Gaia Vince
+  description: "Sees language creation as game of charades. Use imagination to communicate."
+  image: "assets/img/transcendence.jpg"
